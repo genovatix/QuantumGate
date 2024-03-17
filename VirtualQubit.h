@@ -4,6 +4,22 @@
 #include <complex>
 #include <random>
 
+/*
+class VirtualQubit {
+private:
+    std::complex<double> state0; // Probability amplitude for |0>
+    std::complex<double> state1; // Probability amplitude for |1>
+    std::mt19937 gen; // Mersenne Twister random number generator
+    VirtualQubit* entangledPartner = nullptr; // Pointer to an entangled partner, if any
+
+public:
+    VirtualQubit();
+    void entangleWith(VirtualQubit& qubit);
+    bool isEntangled() const;
+    int measure();
+};
+*/
+
 class VirtualQubit {
 private:
    
@@ -24,6 +40,7 @@ public:
     void applyNoise();
     void entangleWith(VirtualQubit& qubit);
     bool isEntangled() const;
+    void flip();
 
     int measure();
     void applyXGate();

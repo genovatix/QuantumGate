@@ -6,7 +6,7 @@ CXXFLAGS = -Wall -std=c++17
 TARGET = quantum_vm_sim
 
 # Source files
-SRC = main.cpp VirtualQubit.cpp QuantumVM.cpp QuantumGate.cpp
+SRC = main.cpp VirtualQubit.cpp QuantumVM.cpp QuantumGate.cpp QuantumRandomNumberGenerator.cpp QRegister.cpp
 
 
 # Object files

@@ -18,3 +18,10 @@ void QuantumGate::applyCNOTGate(VirtualQubit& controlQubit, VirtualQubit& target
         std::swap(targetQubit.state0, targetQubit.state1); // Flip target qubit
     }
 }
+
+void QuantumGate::applyToffoliGate(VirtualQubit& control1, VirtualQubit& control2, VirtualQubit& target) {
+        // Simulate the measurement to decide if the target should be flipped
+        if (control1.measure() == 1 && control2.measure() == 1) {
+            target.flip();
+        }
+    }

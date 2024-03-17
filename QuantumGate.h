@@ -9,6 +9,7 @@ public:
     static void applyHGate(VirtualQubit& qubit);
     static void applyZGate(VirtualQubit& qubit);
     static void applyCNOTGate(VirtualQubit& controlQubit, VirtualQubit& targetQubit);
+    static void applyToffoliGate(VirtualQubit& control1, VirtualQubit& control2, VirtualQubit& target);
     // Add more gates as needed
 };
 

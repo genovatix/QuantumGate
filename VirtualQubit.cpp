@@ -84,3 +84,8 @@ int VirtualQubit::measure() {
     }
     return result;
 }
+
+void VirtualQubit::flip() {
+     
+    std::swap(state0, state1); // Simplifies the flipping of the qubit's state
+}
