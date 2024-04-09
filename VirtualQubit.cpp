@@ -75,6 +75,9 @@ bool VirtualQubit::isEntangled() const {
 }
 
 int VirtualQubit::measure() {
+
+
+    
     std::uniform_real_distribution<> dis(0.0, 1.0);
     double probabilityState0 = std::norm(state0);
     int result = dis(gen) < probabilityState0 ? 0 : 1;
